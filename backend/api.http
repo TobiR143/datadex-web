@@ -1,0 +1,65 @@
+###GET
+GET http://localhost:3000/
+###GET GAMES
+
+GET http://localhost:3000/game
+###GET GAMES FOR SPECIFIC GEN
+
+GET http://localhost:3000/game/by-gen/generation-vii
+
+###GET GAMES FOR ALL GEN
+GET http://localhost:3000/game/all
+
+###GET GENERATIONS
+GET http://localhost:3000/generation
+
+###GET POKEMONS
+GET http://localhost:3000/pokemon?type=fire&generation=generation-vi
+
+###GET POKEMON INFO BY ID
+GET http://localhost:3000/pokemon/1/info
+
+###GET POKEMON STATS BY ID
+GET http://localhost:3000/pokemon/328/stats
+
+###GET POKEMON ABILITIES BY ID
+GET http://localhost:3000/pokemon/1/abilities
+
+###GET POKEMON GAME ENCOUNTERS
+GET http://localhost:3000/pokemon/19/diamond/encounters
+
+###GET POKEMON EVOLUTION CHAIN BY ID
+GET http://localhost:3000/pokemon/2/evolution-chain
+
+###GET POKEMON GAME DATA
+GET http://localhost:3000/pokemon/game/12/x
+
+###GET POKEMON MOVES IN GAME
+GET http://localhost:3000/pokemon/moves/8/pearl 
+
+###GET POKEMON DATA TRAINING
+GET http://localhost:3000/pokemon/data/training/941
+
+###GET POKEMON DATA BREEDING
+GET http://localhost:3000/pokemon/data/breeding/941
+
+###GET POKEMON DATA DAMAGE
+GET http://localhost:3000/pokemon/data/damage-received/941
+
+###GET PREVIOUS AND NEXT POKEMON
+GET http://localhost:3000/pokemon/prevNext/1
+
+### POST POKEMONS WHO LEARN A MOVE
+GET http://localhost:3000/move/13
+
+###GET POKEMONS WHO BELONGS EGG GROUP
+GET http://localhost:3000/egg-group/bug
+
+###GET POKEMONS WHO HAVE ABILITY
+GET http://localhost:3000/ability/flame-body
+
+###GET GAMES FOR A POKEMON
+GET http://localhost:3000/pokemongame/1
+
+###GET POKEMONS WHO APPEARS ON LOCATION
+GET http://localhost:3000/location/120/heartgold_soulsilver

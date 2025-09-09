@@ -1,0 +1,51 @@
+.capture-rate-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+
+.capture-rate-container-div {
+    width: 300px;
+    margin-top: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 12px;
+    border: 1px solid #bcbcbc;
+    padding: 6px 12px;
+}
+
+.capture-rate-percentage {
+    display: flex;
+    align-items: center;
+    font-size: 14px;
+    font-family: system-ui;
+    color: #343434;
+}
+
+.capture-rate {
+    display: flex;
+}
+
+.capture-rate-value {
+    font-size: 14px;
+    font-family: system-ui;
+    font-weight: 500;
+}
+
+.capture-rate span {
+    margin: 0 2px;
+}
+
+@media only screen and (max-width: 480px) {
+    .capture-rate-container-div {
+        width: 100%;
+    }
+
+    .capture-rate-percentage,
+    .capture-rate-value {
+        font-size: 12px;
+    }
+}

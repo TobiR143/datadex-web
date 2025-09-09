@@ -1,0 +1,36 @@
+.header-move-learn-type-selector {
+    display: flex;
+    margin: auto;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: calc(100% - 30px);
+}
+
+.header-move-pokemons-title {
+    font-size: 18px;
+    font-family: system-ui;
+    font-weight: 500;
+    color: #c45f5f;
+}
+
+.header-move-title-span {
+    font-weight: 700;
+    margin: 0 3px;
+    color: #701c1c;
+    font-weight: 500;
+}
+
+.main-pokemons-learn-type {
+    width: calc(100% - 30px);
+    margin: 20px auto;
+    width: calc(100% - 30px);
+}
+
+.pokemons-learn-type-no-results {
+    text-align: center;
+    font-family: system-ui;
+    color: #898989;
+    font-weight: 400;
+    font-size: 12px;
+}

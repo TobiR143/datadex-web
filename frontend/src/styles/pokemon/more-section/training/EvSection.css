@@ -1,0 +1,58 @@
+.training-ev-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.training-ev-container-div {
+    width: 300px;
+    margin-top: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 12px;
+    border: 1px solid #bcbcbc;
+    padding: 6px 12px;
+}
+
+.training-ev {
+    font-family: system-ui;
+    display: flex;
+    justify-content: center;
+    text-transform: capitalize;
+}
+
+.training-ev-value {
+    margin: 0 5px 0 0;
+    display: flex;
+    align-items: center;
+    font-size: 14px;
+    font-weight: 500;
+}
+
+.training-separator {
+    margin: 0 5px;
+    height: 16px;
+    display: flex;
+    align-items: center;
+}
+
+.training-ev-stat {
+    display: flex;
+    align-items: center;
+    font-size: 14px;
+    font-family: system-ui;
+    color: #343434;
+}
+
+@media only screen and (max-width: 480px) {
+    .training-ev-container-div {
+        width: 100%;
+    }
+
+    .training-ev-stat, 
+    .training-ev-value {
+        font-size: 12px;
+    }
+}

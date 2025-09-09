@@ -1,0 +1,43 @@
+.pgs-root {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+
+.pgs-overlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(0,0,0,.45);
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  z-index: 9999;
+}
+
+.pgs-sheet {
+  width: 100%;
+  max-height: 50vh;
+  background: #fff;
+  border-radius: 10px 10px 0 0;
+  padding: 10px;
+  overflow-y: auto;
+  animation: pgs-slide-up .28s ease-out;
+}
+
+@keyframes pgs-slide-up {
+  from { 
+    transform: translateY(100%);
+  }
+  to { 
+    transform: translateY(0); 
+  }
+}
+
+.pgs-title {
+  text-align: center;
+  font-family: system-ui;
+  margin: 6px 0 12px;
+  color: #3b4a54;
+  font-weight: 400;
+  font-size: 16px;
+}

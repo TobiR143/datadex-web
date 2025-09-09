@@ -1,0 +1,231 @@
+.move-modal {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  background: #00000073;
+  z-index: 9999;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+
+.move-modal > div {
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+}
+
+.move-modal > div::-webkit-scrollbar {
+  display: none;
+}
+
+.move-modal.slide-out > div {
+  animation: slide-down 0.3s ease-out forwards;
+}
+
+.move-modal > div {
+  gap: 10px;
+  width: 100%;
+  max-height: 70vh;
+  overflow-y: scroll;
+  background: #f9faf9;
+  border-radius: 20px 20px 0 0;
+  padding: 0;
+  transform: translateY(100%);
+  animation: slide-up 0.3s ease-out forwards;
+  display: flex;
+  flex-direction: column;
+}
+
+.move-modal-header {
+  position: sticky;
+  top: 0;
+  padding: 20px;
+  text-align: center;
+  font-family: system-ui;
+}
+
+.move-modal-title {
+  font-size: 24px;
+  text-transform: capitalize;
+  font-weight: 600;
+}
+
+.move-modal-description {
+  font-size: 14px;
+  margin-top: 6px;
+  font-family: system-ui;
+  text-transform: capitalize;
+}
+
+.move-modal-section {
+  margin: 10px 0;
+  background: #cdcdcd62;
+  padding: 16px;
+  text-align: center;
+  font-family: system-ui;
+  border-radius: 6px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 5px;
+  width: 90%;
+}
+
+.move-modal-section-title {
+  font-size: 16px;
+  font-weight: 600;
+  margin-bottom: 6px;
+  text-align: left;
+  text-transform: uppercase;
+}
+
+.move-modal-section-text {
+  font-size: 15px;
+  color: #444;
+}
+
+.move-modal-aside {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.move-modal-aside > div {
+  width: 90%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  margin: 20px 0;
+}
+
+.move-modal-type-name, .move-modal-category {
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+} 
+
+.move-modal-type-name p, .move-modal-category p {
+  margin: 0;
+  text-align: center;
+}
+
+.move-modal-type-name-content, .move-modal-category-content {
+  padding: 6px 12px;
+  text-transform: uppercase;
+  justify-content: center;
+  align-items: center;
+  border-radius: 10px;
+  font-family: system-ui;
+  color: #ededed;
+}
+
+.move-modal-category-content {
+  font-style: italic;
+}
+
+.move-modal-category-physical {
+  background-color: #9f1212;
+}
+
+.move-modal-category-status {
+  background-color: #596568;
+}
+
+.move-modal-category-special {
+  background-color: #234148;
+}
+
+.move-modal-main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.move-modal-article-description {
+  font-size: 12px;
+  color: #898989;
+  font-family: system-ui;
+}
+
+.move-modal-article p {
+  margin: 0;
+}
+
+.move-modal-article-text {
+  color: #343434;
+  font-size: 14px;
+  font-weight: 500;
+  font-family: system-ui;
+}
+
+.move-modal-article {
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+  justify-content: center;
+  align-items: center;
+}
+
+.pokemon-who-learn-move-a {
+  width: 90%;
+  text-decoration: none;
+  display: flex;
+  text-align: center;
+  margin: auto;
+  justify-content: center;
+  align-items: center;
+  border-radius: 6px;
+  padding: 6px 12px;
+  text-transform: uppercase;
+  color: #ededed;
+  font-family: system-ui;
+  margin-bottom: 20px;
+}
+
+@media only screen and (max-width: 480px) {
+    .move-modal-header {
+      padding: 10px;
+    }
+
+    .move-modal-title, .move-modal-description {
+      margin: 5px 0;
+    }
+
+    .move-modal-title {
+      font-size: 18px;
+    }
+
+    .move-modal-description {
+      font-size: 12px;
+    }
+
+    .move-modal-type-name-content,
+    .move-modal-category-content {
+      font-size: 12px;
+    }
+
+    .move-modal-article-description {
+      font-size: 10px;
+    }
+
+    .move-modal-section {
+        padding: 5px;
+    }
+
+    .move-modal-section-title {
+        font-size: 14px;
+        margin: 5px;
+    }
+
+    .move-modal-section-text {
+        font-size: 12px;
+        margin: 5px;
+    }
+}

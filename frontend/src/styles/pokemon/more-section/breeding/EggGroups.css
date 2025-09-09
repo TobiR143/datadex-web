@@ -1,0 +1,63 @@
+.egg-groups-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    max-width: 400px;
+    flex-direction: column;
+}
+
+.egg-groups-section-div {
+    display: flex;
+    gap: 10px;
+    width: 100%;
+}
+
+.egg-group {
+    text-decoration: none;
+    border-radius: 6px;
+    padding: 6px 12px;
+    display: flex;
+    width: 100px;
+    flex-grow: 1;
+    justify-content: space-between;
+    align-items: center;
+    font-weight: 500;
+    font-size: 14px;
+    font-family: system-ui;
+    text-transform: capitalize;
+    cursor: pointer;
+}
+
+.egg-group-name {
+    width: 100%;
+    text-align: center;
+}
+
+.egg-group svg {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.egg-groups-description {
+    font-size: 12px;
+    color: #898989;
+    text-align: center;
+    margin-top: 0;
+    font-family: system-ui;
+}
+
+@media only screen and (max-width:480px) {
+    .egg-group {
+        padding: 3px 6px;
+    }
+
+    .egg-group-name {
+        font-size: 12px;
+    }
+    
+    .egg-group svg {
+        width: 18px;
+    }
+}

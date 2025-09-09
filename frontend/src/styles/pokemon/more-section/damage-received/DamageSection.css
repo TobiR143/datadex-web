@@ -1,0 +1,86 @@
+.damage-received-section-title {
+    font-size: 18px;
+    font-family: system-ui;
+    text-align: center;
+    font-weight: 500;
+}
+
+.damage-received-section {
+    background-color: #fff;
+    margin: 10px;
+    border-radius: 12px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.damage-received-description {
+    text-align: center;
+    color: #ababab;
+    font-family: system-ui;
+    font-size: 16px;
+}
+
+.damage-received-elements-container {
+    max-width: 500px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 5px;
+    padding: 20px;
+    padding-top: 0;
+}
+
+.damage-received-element {
+    font-family: system-ui;
+    width: 130px;
+    display: flex;
+    border-radius: 5px;
+    color: #f6efef;
+    flex-grow: 1;
+}
+
+.damage-received-element-header {
+    padding: 6px 12px;
+    font-size: 14px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    text-transform: uppercase;
+}
+
+.damage-received-element-aside {
+    padding: 6px;
+    border-radius: 0 6px 6px 0;
+}
+
+@media only screen and (max-width: 480px) {
+    .damage-received-section-title {
+        font-size: 14px;
+    }
+
+    .damage-received-elements-container {
+        width: 90%;
+    }
+
+    .damage-received-description {
+        font-size: 13px;
+    }
+
+    .damage-received-element {
+        width: 90px;
+    }
+
+    .damage-received-element-header {
+        font-size: 12px;
+        padding: 2px 4px;
+    }
+
+    .damage-received-element-aside {
+        font-size: 10px;
+    }
+}

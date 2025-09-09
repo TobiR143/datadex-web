@@ -1,0 +1,151 @@
+.specie-section-title {
+    text-align: center;
+    font-family: system-ui;
+    font-size: 18px;
+    font-weight: 500;
+}
+
+.info-section-data {
+    margin: 10px;
+    padding: 10px;
+    border-radius: 12px;
+    background-color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.info-section-data-description-container {
+    border-radius: 10px;
+    border: 1px solid #cccccc;
+    padding: 0 6px;
+    text-align: center;
+}
+
+.info-section-data-description {
+    font-family: system-ui;
+    font-size: 14px;
+    color: #444444;
+}
+
+.info-section-data-sounds, .info-section-data-values {
+    width: 300px;
+    display: flex;
+    justify-content: space-between;
+    gap: 12px;
+    align-items: center;
+}
+
+
+.info-section-data-values-height-container,
+.info-section-data-values-weight-container,
+.info-section-data-voice-container,
+.info-section-data-cry-container {
+    font-family: system-ui;
+    color: #444444;
+    font-size: 14px;
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+    justify-content: center;
+    align-items: center;
+    gap: 2px;
+}
+
+.info-section-icons-container:first-child {
+    flex-direction: row;
+    gap: 12px;
+}
+
+.info-section-icons-container,
+.info-section-data-height,
+.info-section-data-weight {
+    border-radius: 12px;
+    padding: 6px;
+    border: 1px solid #cccccc;
+    display: flex;
+    justify-content: center;
+    margin: 20px 0 0 0;
+    width: 120px;
+}
+
+.info-section-data-voice-container,
+.info-section-data-cry-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.info-section-data-cry-container,
+.info-section-icons-voice,
+.info-section-icons-setting {
+    cursor: pointer;
+}
+
+.info-section-data-height-label,
+.info-section-data-weight-label,
+.info-section-data-voice-label,
+.info-section-data-cry-label,
+.info-section-data-description-details {
+    font-family: system-ui;
+    color: #444444;
+    font-size: 12px;
+    font-weight: 200;
+}
+
+.info-section-data-description-details {
+    text-align: center;
+}
+
+.info-section-data-description-details span {
+    text-transform: capitalize;
+}
+
+.sprites-description {
+    font-size: 12px;
+    font-family: system-ui;
+}
+
+@media only screen and (max-width:480px) {
+    .specie-section-title {
+        font-size: 15px;
+    }
+
+    .info-section-icons-container,
+    .info-section-data-height,
+    .info-section-data-weight {
+        width: 80px;
+        font-size: 11px;
+        text-wrap: nowrap;
+        padding: 6px 12px;
+    }
+    
+    .info-section-icons-container {
+        display: flex;
+        align-items: center;
+        padding: 4px 12px;
+    }
+    
+    .info-section-data-values,
+    .info-section-data-sounds {
+        width: 100%;
+    }
+    
+    .info-section-data-height-label,
+    .info-section-data-weight-label,
+    .info-section-data-voice-label,
+    .info-section-data-cry-label,
+    .info-section-data-description-details,
+    .sprites-description {
+        font-size: 10px;
+    }
+    
+    .info-section-data svg, 
+    .info-section-icons-setting,
+    .info-section-icons-voice {
+        width: 16px;
+        height: 16px;
+    }
+}

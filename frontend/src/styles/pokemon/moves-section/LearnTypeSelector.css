@@ -1,0 +1,47 @@
+.learn-type-selector-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 12px;
+    background-color: #fff;
+    padding: 10px;
+    margin: 10px;
+}
+
+.learn-type-selector {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    width: 100%;
+}
+
+.learn-type-selector-description {
+    margin: 0;
+    font-size: 12px;
+    font-family: system-ui;
+    color: #898989;
+}
+
+.learn-type {
+    border: none;
+    padding: 6px 12px;
+    flex-grow: 1;
+    max-width: 120px;
+    border-radius: 6px;
+    text-transform: capitalize;
+    font-family: system-ui;
+    cursor: pointer;
+}
+
+@media only screen and (max-width: 480px) {
+    .learn-type {
+        font-size: 12px;
+        padding: 4px 8px;
+    }
+
+    .learn-type-selector-description {
+        font-size: 10px;
+    }
+}

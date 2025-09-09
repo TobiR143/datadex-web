@@ -1,0 +1,134 @@
+.stats-section-title {
+    text-align: center;
+    font-family: system-ui;
+    font-size: 18px;
+    font-weight: 500;
+}
+
+.stats-section {
+  margin: 10px;
+  padding: 10px;
+  display: flex;
+  background-color: #fff;
+  flex-direction: column;
+  justify-content: center;
+  border-radius: 12px;
+  font-family: system-ui;
+}
+
+.stats-selector { 
+    display: flex; 
+    justify-content: center;
+    gap: 10px;
+    margin-bottom: 10px;
+} 
+
+.base-total {
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+}
+
+.stats-values {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    max-width: 400px;
+    margin: 0 auto;
+}
+
+.stat-option { 
+    padding: 6px; 
+    font-size: 14px; 
+    text-align: center; 
+    font-weight: 400; 
+    width: 150px; 
+    cursor: pointer;
+    font-weight: 500;
+}
+
+.stat {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  margin: 5px 0;
+}
+
+.stat-name {
+  width: 100px;
+  text-align: center;
+  padding: 6px 10px;
+  font-weight: 500;
+  border-radius: 6px 0 0 6px;
+  font-size: 14px;
+  text-transform: capitalize;
+}
+
+.stat-bar-container {
+  flex-grow: 1;
+  max-width: 250px;
+  padding: 0 10px 0 0;
+}
+
+.stat-bar {
+  height: 24px;
+  border-radius: 0 6px 6px 0;
+  padding: 3.2px;
+  transition: width 1s ease-in-out;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  padding-right: 8px;
+  color: #333;
+  font-weight: bold;
+  font-size: 14px;
+}
+
+.stat-value-text {
+  margin-left: 8px;
+  min-width: 30px;
+  text-align: left;
+}
+
+.base-total {
+    color: #343434;
+    font-family: system-ui;
+    font-size: 15px;
+    text-transform: uppercase;
+}
+
+.base-total span {
+    margin-left: 10px;
+    font-weight: 500;
+}
+
+.stats-description {
+    font-size: 12px;
+    font-weight: 400;
+    color: #898989;
+    text-align: center;
+    margin-top: 10px;
+}
+
+@media only screen and (max-width: 480px) {
+    .stats-section-title {
+        font-size: 15px;
+    }
+
+    .stat-name {
+        width: 50px;
+        text-wrap: nowrap;
+        font-size: 10px;
+    }
+
+    .stat-bar {
+        font-size: 10px;
+        padding: .3px 5px;
+    }
+
+    .stat-option {
+        font-size: 11px;
+    }
+}

@@ -1,0 +1,47 @@
+---
+import { PokemonDataPage } from '@components/pokemon/PokemonDataPage.tsx';
+import type { Error, PokemonByIdResponse } from '../../types/types.ts'
+import { ErrorContainer } from '@components/pokemon/ErrorContainer';
+
+export const prerender = false
+
+const { id } = Astro.params
+
+const res = await fetch(`http://localhost:3000/pokemon/${id}/info`)
+let error: Error | null = null 
+let pokemon: PokemonByIdResponse | null = null
+
+if (!res.ok) {
+  error = {
+    status: res.status,
+    message: (await res.json()).error
+  }
+} else {
+  pokemon = await res.json()
+}
+---
+
+
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width" />
+		<meta name="generator" content={Astro.generator} />
+		<title>{pokemon?.name.charAt(0).toUpperCase()}{pokemon?.name.slice(1)}</title>
+	</head> 
+	<body style={pokemon && `background:${pokemon.colors.normal}`}>
+		{error && <ErrorContainer error={error} />}
+		{pokemon && <PokemonDataPage pokemon={pokemon} client:load /> }
+	</body>
+</html>
+
+<style>
+	html,
+	body {
+		height: 100%;
+		margin: 0;
+		padding: 0;
+		width: 100%;
+	}
+</style>

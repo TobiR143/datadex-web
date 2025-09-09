@@ -1,0 +1,23 @@
+.breeding-section-title {
+    font-size: 18px;
+    font-family: system-ui;
+    text-align: center;
+    font-weight: 500;
+}
+
+.breeding-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin: 10px;
+    background-color: #fff;
+    padding: 10px;
+    border-radius: 12px;
+}
+
+@media only screen and (max-width: 480px) {
+    .breeding-section-title {
+        font-size: 14px;
+    }
+}

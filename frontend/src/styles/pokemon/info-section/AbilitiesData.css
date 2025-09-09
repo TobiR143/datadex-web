@@ -1,0 +1,116 @@
+.abilities-section-title {
+    text-align: center;
+    font-size: 18px;
+    font-family: system-ui;
+    font-weight: 500;
+}
+
+.abilities-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 10px;
+    background-color: #fff;
+    border-radius: 12px;
+    padding: 12px;
+}
+
+.ability-separator {
+    color: #898989;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 14px;
+    font-family: system-ui;
+}
+
+.hidden-abilities-container,
+.normal-abilities-container {
+    font-family: system-ui;
+    display: flex;
+    margin: 5px 0;
+    height: 30px;
+    width: 100%;
+    gap: 10px;
+    max-width: 400px;
+}
+
+.hidden-ability, 
+.normal-ability {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    border-radius: 12px;
+    cursor: pointer;
+    text-wrap: nowrap;
+}
+
+.hidden-ability-header,
+.normal-ability-header {
+    margin: 0;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.hidden-ability-header {
+    border-radius: 0 12px 12px 0;
+    padding: 5px;
+}
+
+.hidden-ability-content,
+.normal-ability-content {
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 14px;
+    text-transform: capitalize;
+}
+
+.normal-ability-content {
+    font-weight: 400;
+}
+
+.hidden-ability-header {
+    width: 100%;
+    justify-content: space-between;
+}
+
+.hidden-ability-content {
+    width: 100%;
+    text-align: center;
+}
+
+.normal-ability-aside,
+.hidden-ability-aside {
+    margin: 0 5px;
+    padding: 0;
+    display: flex;
+    justify-self: center;
+    align-self: center;
+}
+
+.hidden-ability-aside {
+    font-size: 14px;
+    margin: 0;
+    padding: 5.5px 12px;
+    border-radius: 12px 0 0 12px;
+}
+
+.hidden-ability-hidden {
+    margin: 0;
+    font-weight: 400;
+}
+
+@media only screen and (max-width: 480px) {
+    .abilities-section-title {
+        font-size: 15px;
+    }
+
+    .hidden-ability-aside {
+        padding: 5.5px 4px;
+    }
+}

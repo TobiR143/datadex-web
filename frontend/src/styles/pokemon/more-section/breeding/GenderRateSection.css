@@ -1,0 +1,62 @@
+.gender-rate {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 400px;
+    max-width: 100%;
+}
+
+.gender-rate-values {
+    display: flex;
+    width: 100%;
+    border-radius: 12px;
+    padding: 0;
+}
+
+.gender-male, .gender-female {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+    padding: 5px;
+}
+
+.gender-female p,
+.gender-male p {
+    margin: 0;
+    font-family: system-ui;
+    font-size: 14px;
+    font-weight: 500;
+}
+
+.gender-male {
+    background-color: #3294bb;
+    color:#2b2c5f;
+    border-radius: 6px 0 0 6px;
+}
+
+.gender-female {
+    background-color: #d04aa8;
+    color: #641459;
+    border-radius: 0 6px 6px 0;
+}
+
+.gender-rate-description {
+    font-size: 12px;
+    margin-top: 0;
+    text-align: center;
+    color: #898989;
+    font-family: system-ui;
+}
+
+@media only screen and (max-width: 480px) {
+    .gender-male p,
+    .gender-female p {
+        font-size: 12px;
+    }
+
+    .gender-rate svg {
+        width: 14px;
+    }
+}

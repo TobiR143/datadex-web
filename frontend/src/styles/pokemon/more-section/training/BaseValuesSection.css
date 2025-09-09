@@ -1,0 +1,37 @@
+.base-values {
+    width: 325px;
+    padding: 0;
+    margin-top: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 10px;
+}
+
+.base-happiness, .base-experience {
+    width: 100%;
+}
+
+.base-happiness-value,
+.base-experience-value {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 12px;
+    border: 1px solid #bcbcbc;
+    padding: 6px 12px;
+    flex-grow: 1;
+    font-weight: 500;
+    font-family: system-ui;
+}
+
+@media only screen and (max-width: 480px) {
+    .base-values {
+        max-width: 225px;
+    }
+
+    .base-happiness-value,
+    .base-experience-value {
+        font-size: 12px;
+    }
+}

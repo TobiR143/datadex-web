@@ -1,0 +1,99 @@
+.pokemon-card {
+  text-decoration: none;
+  height: 140px;
+  border-radius: 10px;
+  margin: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.pokemon-card-header {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+}
+
+.pokemon-card-header-data {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: calc(100% - 30px);
+}
+
+.pokemon-games-container {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 10px;
+}
+
+.pokemon-game {
+  border-radius: 12px;
+  padding: 6px 18px;
+  font-family: system-ui;
+  font-size: 14px;
+  text-transform: uppercase;
+  font-weight: 500;
+  background-color: #fefefe;
+}
+
+.pokemon-name {
+  font-size: 18px;
+  font-family: system-ui;
+  text-transform: capitalize;
+  font-weight: 500;
+}
+
+.pokemon-level-range {
+  font-size: 18px;
+  font-family: system-ui;
+  font-weight: 400;
+}
+
+.pokemon-chance {
+  padding: 4px 8px;
+  font-family: system-ui;
+  border-radius: 6px;
+  background-color: #f7f7f7;
+}
+
+.pokemon-card-aside {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+
+.pokemon-card-img-container {
+  background-color: #fefefe;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  max-width: 150px;
+  border-radius: 50% 10px 10px 50%;
+}
+
+.pokemon-card-img {
+  object-fit: cover;
+  width: 100%;
+}
+
+.pokemon-chance-very-low { color: #912e1d; }
+.pokemon-chance-low { color: #dc8144; }
+.pokemon-chance-medium { color: #dbd036; }
+.pokemon-chance-high { color: #98e080; }
+.pokemon-chance-very-high { color: #76d556; }
+
+@media only screen and (max-width: 480px) {
+  .pokemon-card { height: 100px; }
+  .pokemon-name { font-size: 12px; }
+  .pokemon-level-range { font-size: 12px; }
+  .pokemon-chance { font-size: 12px; }
+  .pokemon-game { font-size: 12px; padding: 6px 8px; }
+  .pokemon-card-img-container { width: 100%; }
+  .pokemon-card-img { width: 70%; }
+}

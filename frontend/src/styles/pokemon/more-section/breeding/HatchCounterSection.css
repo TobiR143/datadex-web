@@ -1,0 +1,35 @@
+.hatch-counter {
+    width: 100%;
+    max-width: 400px;
+    flex-direction: column;
+    font-size: 14px;
+    font-family: system-ui;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.hatch-counter-div {
+    border: 1px solid #ababab;
+    border-radius: 6px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+    padding: 6px 0;
+}
+
+.hatch-counter-cicles {
+    font-weight: 500;
+}
+
+.hatch-counter-steps {
+    color: #343434;
+}
+
+.hatch-counter-description {
+    margin-top: 0;
+    color: #898989;
+    font-size: 12px;
+}

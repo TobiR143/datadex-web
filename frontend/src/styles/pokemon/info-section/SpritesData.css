@@ -1,0 +1,56 @@
+.sprites-section-title {
+    font-size: 18px;
+    text-align: center;
+    font-weight: 500;
+    font-family: system-ui;
+}
+
+.sprites-section {
+    display: flex;
+    border-radius: 12px;
+    justify-content: center;
+    align-items: center;
+    min-height: 300px;
+    margin: 10px;
+    background-color: #fff;
+    flex-direction: column;
+}
+
+.normal-sprite-container,
+.shiny-sprite-container {
+    max-width: 150px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.normal-sprite-title,
+.shiny-sprite-title {
+    font-size: 16px;
+    font-family: system-ui;
+    color: #898989;
+    font-weight: 400;
+}
+
+.shiny-sprite,
+.normal-sprite {
+    width: 100%;
+}
+
+.sprites-description {
+    font-size: 14px;
+    font-weight: 300;
+    color: #898989;
+}
+
+.sprites-description span {
+    text-transform: capitalize;
+}
+
+@media only screen and (max-width: 480px) {
+    .sprites-description {
+        font-size: 12px;
+    }
+}

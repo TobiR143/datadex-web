@@ -1,0 +1,19 @@
+---
+import { PokemonPage } from '../components/index/PokemonPage.tsx';
+import Layout from '../layouts/Layout.astro';
+import type { PokemonResponse } from '../types/types.ts'
+
+const res = await fetch(`http://localhost:3000/pokemon`)
+const result: PokemonResponse  = await res.json()
+
+const { hasMore } = result
+---
+
+<Layout title={'Datadex Web'}>
+	<PokemonPage client:load />
+	{ !hasMore && 
+		<div>
+			No more Pokemon
+		</div>
+	}
+</Layout>

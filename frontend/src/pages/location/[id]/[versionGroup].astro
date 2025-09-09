@@ -1,0 +1,14 @@
+---
+import Layout from "src/layouts/Layout.astro"
+import { LocationPage } from "src/components/location/pokemons/LocationPage.tsx"
+
+export const prerender = false
+
+const { id, versionGroup } = Astro.params
+---
+
+<Layout title={`Location - ${versionGroup}`}>
+  {id && versionGroup &&
+    <LocationPage client:load id={id} versionGroup={versionGroup} />
+  }
+</Layout>

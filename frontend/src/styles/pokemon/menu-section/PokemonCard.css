@@ -1,0 +1,93 @@
+.pokemon-prevnext-card {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    border-radius: 6px;
+    height: 200px;
+}
+
+.pokemon-prevnext-header {
+    display: flex;
+    font-family: system-ui;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+}
+
+.pokemon-prevnext-header-data {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    justify-content: space-between;
+}
+
+.pokemon-prevnext-id,
+.pokemon-prevnext-name {
+    font-family: system-ui;
+    margin: 10px;
+    font-size: 18px;
+}
+
+.pokemon-prevnext-name {
+    text-transform: capitalize;
+}
+
+.pokemon-prevnext-types-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 10px;
+}
+
+.pokemon-prevnext-type {
+    font-family: system-ui;
+    border-radius: 12px;
+    padding: 6px 12px;
+    text-transform: uppercase;
+    border: 1px solid #fff;
+    font-weight: 500;
+}
+
+.pokemon-prevnext-aside {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    border-radius: 50% 6px 6px 50%;
+}
+
+.pokemon-prevnext-img {
+    width: 200px;
+    max-width: 100%;
+    object-fit: cover;
+}
+
+@media only screen and (max-width: 480px) {
+    .pokemon-prevnext-card {
+        height: 120px;
+    }
+
+    .pokemon-prevnext-id,
+    .pokemon-prevnext-name {
+        font-size: 14px;
+    }
+
+    .pokemon-prevnext-types-container {
+        gap: 5px;
+    }
+
+    .pokemon-prevnext-type {
+        padding: 4px 8px;
+        font-size: 11px;
+    }
+
+    .pokemon-prevnext-img {
+        width: 100px;
+        max-width: 100%;
+        object-fit: cover;
+    }
+}

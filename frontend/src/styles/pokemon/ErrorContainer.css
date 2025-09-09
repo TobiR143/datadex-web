@@ -1,0 +1,32 @@
+.error-container {
+    font-family: system-ui;
+    background-color: #cd5353;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 100vw;
+    height: 100vh;
+}
+
+.home-redirect {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    border-radius: 12px;
+    padding: 6px 18px;
+    background-color: #cdcdcd;
+    text-decoration: none;
+    color: #cd5353;
+}
+
+.error-status {
+    color: #cdcdcd;
+    font-size: 24px;
+}
+
+.error-message {
+    text-align: center;
+    color: #cdcdcd;
+    font-size: 24px;
+}
