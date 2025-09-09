@@ -1,7 +1,7 @@
 ###GET
 GET http://localhost:3000/
-###GET GAMES
 
+###GET GAMES
 GET http://localhost:3000/game
 ###GET GAMES FOR SPECIFIC GEN
 

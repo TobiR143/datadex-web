@@ -1,11 +1,12 @@
 ---
+import { BASE_API_URL } from 'src/constants/config';
 import { PokemonPage } from '../components/index/PokemonPage.tsx';
 import Layout from '../layouts/Layout.astro';
 import type { PokemonResponse } from '../types/types.ts'
 
 export const prerender = false
 
-const res = await fetch(`http://localhost:3000/pokemon`)
+const res = await fetch(`${BASE_API_URL}/pokemon`)
 const result: PokemonResponse  = await res.json()
 
 const { hasMore } = result

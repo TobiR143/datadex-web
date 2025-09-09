@@ -12,5 +12,13 @@ export default defineConfig({
       '@styles': '/src/styles',
       '@utils': '/src/utils'
     }
-  }
+  },
+  server: {
+    https: {
+      key: fs.readFileSync('./localhost+2-key.pem'),
+      cert: fs.readFileSync('./localhost+2.pem'),
+    },
+    host: true,
+    port: 3000,
+  },
 });
