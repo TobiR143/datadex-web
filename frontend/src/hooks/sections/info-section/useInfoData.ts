@@ -1,5 +1,6 @@
 import { useEffect, useState } from "react"
 import type { GameData, PokemonInfoResponseById } from "../../../types/types.ts"
+import { BASE_API_URL } from "src/constants/config.ts"
 
 export const useInfoData = (id: number, selectedGame: GameData | null) => {
     const [infoData, setInfoData] = useState<PokemonInfoResponseById>({
@@ -13,7 +14,7 @@ export const useInfoData = (id: number, selectedGame: GameData | null) => {
     useEffect(() => {
         if (!selectedGame) return
         setIsLoading(true)
-        fetch(`http://localhost:3000/pokemon/game/${id}/${selectedGame.game}`)
+        fetch(`${BASE_API_URL}/pokemon/game/${id}/${selectedGame.game}`)
             .then(res => res.json())
             .then(data => {
                 setInfoData(data)
