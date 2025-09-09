@@ -16,7 +16,6 @@
     "react-dom": "19.1.0"
   },
   "devDependencies": {
-    "@astrojs/vercel": "^8.2.7",
-    "gh-pages": "^6.3.0"
+    "@astrojs/netlify": "^6.5.10"
   }
 }

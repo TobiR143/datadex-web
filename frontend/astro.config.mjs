@@ -1,16 +1,16 @@
 import { defineConfig } from 'astro/config';
 import react from '@astrojs/react';
-import vercel from '@astrojs/vercel'
+import netlify from '@astrojs/netlify';
 
 export default defineConfig({
-  devToolbar: { enabled: false },
-  adapter: vercel(),
   integrations: [react()],
+  output: 'server',
+  adapter: netlify(),
   vite: {
     resolve: {
       '@components': '/src/components',
       '@styles': '/src/styles',
-      '@utils': '/src/utils',
+      '@utils': '/src/utils'
     }
   }
 });
