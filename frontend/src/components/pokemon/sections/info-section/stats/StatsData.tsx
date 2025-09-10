@@ -1,5 +1,5 @@
 import type { PokemonByIdResponse } from "src/types/types";
-import "src/styles/pokemon/info-section/StatsData.css"
+import "src/styles/pokemon/info-section/stats/StatsData.css"
 import { useEffect, useState } from "react";
 import { usePokemon } from "src/contexts/PokemonContext";
 import { usePokemonStats } from "src/hooks/sections/info-section/usePokemonStats";

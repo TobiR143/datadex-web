@@ -3,7 +3,7 @@ import { usePokemon } from "src/contexts/PokemonContext"
 import { useLocations } from "src/hooks/sections/info-section/useLocations"
 import type { PokemonByIdResponse } from "src/types/types"
 import { SectionLoading } from "../../SectionLoading"
-import "src/styles/pokemon/info-section/LocationsData.css"
+import "src/styles/pokemon/info-section/location/LocationsData.css"
 import { InfoIcon } from "src/icons/Icons"
 
 export const LocationsData = () => {

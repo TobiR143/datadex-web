@@ -1,5 +1,5 @@
 import type { PokemonByIdResponse } from "src/types/types";
-import "src/styles/pokemon/info-section/AbilitiesData.css"
+import "src/styles/pokemon/info-section/abilities/AbilitiesData.css"
 import { InfoIcon } from "src/icons/Icons";
 import React, { useEffect } from "react";
 import { usePokemon } from "src/contexts/PokemonContext";

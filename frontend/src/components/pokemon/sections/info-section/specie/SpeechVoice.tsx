@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react";
 import { StopIcon, VoiceIcon } from "src/icons/Icons";
 import type { HexColor } from "src/types/types";
-import "src/styles/pokemon/info-section/ShowMenu.css"
+import "src/styles/pokemon/info-section/specie/ShowMenu.css"
 import { SpeechVoiceMenu } from "./SpeechVoiceMenu";
 import { useOptions } from "src/hooks/sections/info-section/useOptions";
 

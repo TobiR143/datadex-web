@@ -1,7 +1,7 @@
 import { Loader } from "@components/index/Loader"
 import { useEvolutionChain } from "src/hooks/sections/info-section/usePokemonEvolutionChain"
 import { EvolutionNode } from "./EvolutionNode"
-import "src/styles/pokemon/info-section/EvolutionChain.css"
+import "src/styles/pokemon/info-section/evolution-chain/EvolutionChain.css"
 import { usePokemon } from "src/contexts/PokemonContext"
 import type { PokemonByIdResponse } from "src/types/types"
 

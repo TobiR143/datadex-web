@@ -2,7 +2,7 @@ import { useState, useEffect } from "react"
 import type { Ability, PokemonByIdResponse } from "src/types/types"
 import { usePokemonByAbility } from "src/hooks/sections/info-section/usePokemonsByAbility"
 import { PokemonCard } from "src/components/pokemon/sections/menu-section/PokemonCard"
-import "src/styles/pokemon/info-section/AbilityModal.css"
+import "src/styles/pokemon/info-section/abilities/AbilityModal.css"
 import { SectionLoading } from "../../SectionLoading"
 
 type Props = {

@@ -1,7 +1,7 @@
 import { PokemonCry } from "@components/pokemon/sections/info-section/specie/PokemonCry"
 import { SpeechVoice } from "@components/pokemon/sections/info-section/specie/SpeechVoice"
 import type { PokemonByIdResponse } from "src/types/types"
-import "src/styles/pokemon/info-section/SpecieData.css"
+import "src/styles/pokemon/info-section/specie/SpecieData.css"
 import { usePokemon } from "src/contexts/PokemonContext"
 import { useGameContext } from "src/contexts/GameContext"
 import { useInfoData } from "src/hooks/sections/info-section/useInfoData"

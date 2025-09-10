@@ -1,7 +1,7 @@
 import { useGameContext } from "src/contexts/GameContext"
 import { usePokemon } from "src/contexts/PokemonContext"
 import { useInfoData } from "src/hooks/sections/info-section/useInfoData"
-import "src/styles/pokemon/info-section/SpritesData.css"
+import "src/styles/pokemon/info-section/sprites/SpritesData.css"
 import type { PokemonByIdResponse } from "src/types/types"
 import { SectionLoading } from "../../SectionLoading"
 

@@ -26,11 +26,11 @@ export const Selectors = ({ types, generations, onChangeFilters }: Props) => {
           selectedType !== "All Types"
             ? { backgroundColor: types.find(t => t.name === selectedType)?.color, color: "#fff", textTransform: "uppercase" }
             : {}
-          } className="selector-button" onClick={() => setShowMenu("type")}>
+          } className="selector-button types" onClick={() => setShowMenu("type")}>
             {selectedType}
         </div>
         <hr />
-        <div className="selector-button" onClick={() => setShowMenu("generation")}>
+        <div className="selector-button generations" onClick={() => setShowMenu("generation")}>
           {selectedGeneration}
         </div>
       </div>
