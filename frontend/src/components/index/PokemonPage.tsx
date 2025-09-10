@@ -24,7 +24,7 @@ export const PokemonPage = () => {
         {pokemons.map(pokemon => (
           <PokemonCard key={pokemon.id} pokemon={pokemon} />
         ))}
-        <div ref={observerRef} style={{ height: "1px" }} />
+        <div ref={observerRef} style={{ height: "20px", width: "100%" }} />
         {isLoading && <Loader />}
       </section>
     </>
