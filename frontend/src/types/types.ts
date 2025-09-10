@@ -350,7 +350,7 @@ export interface EvolutionNode {
   id: number,
   name: string,
   img: string,
-  types: string[],
+  types: Type[],
   colors: Colors,
   evolvesTo?: {
     method: string,

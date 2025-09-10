@@ -10,19 +10,34 @@ export const EvolutionChain = () => {
   const { id, colors } = pokemon
   const { data, isLoading, error } = useEvolutionChain(id)
 
+  const chain =
+    data && data.length > 0
+      ? data
+      : [
+          {
+            id: pokemon.id,
+            name: pokemon.name,
+            img: pokemon.img,
+            types: pokemon.types,
+            colors: pokemon.colors,
+            evolvesTo: [],
+          },
+        ]
+
   return (
     <>
       {isLoading && <Loader />}
       {error && <p>{error}</p>}
       <h2
-        style={{ color: colors.darkest }} 
+        style={{ color: colors.darkest }}
         className="evolution-chain-title"
-      >Evolution Chain</h2>
+      >
+        Evolution Chain
+      </h2>
       <div className="evolution-chain">
-        {data &&
-          data.map((root) => (
-            <EvolutionNode key={root.id} node={root} />
-          ))}
+        {chain.map((root) => (
+          <EvolutionNode key={root.id} node={root} />
+        ))}
       </div>
     </>
   )
